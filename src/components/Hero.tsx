@@ -31,7 +31,7 @@ const Hero = () => {
             From pre-arrival planning to academic support, employment readiness, and community. Everything you need, in one place.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-gold text-accent-foreground hover:bg-gold/90 rounded-md px-6 py-5">
+            <Button className="bg-navy-dark text-primary-foreground hover:bg-primary rounded-md px-6 py-5 border border-primary-foreground/30">
               Explore Services
             </Button>
             <Button variant="outline" className="bg-primary-foreground text-navy hover:bg-primary-foreground/90 rounded-md px-6 py-5 border-none">

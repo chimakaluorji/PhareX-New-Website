@@ -6,13 +6,9 @@ const CTASection = () => {
     <section className="py-12 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <div className="flex items-center justify-center gap-4 mb-8">
-            <div className="w-1 h-8 bg-gold rounded-full" />
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-navy">
-              Not sure where to start?
-            </h2>
-            <div className="w-1 h-8 bg-gold rounded-full" />
-          </div>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-navy mb-8">
+            Not sure where to start?
+          </h2>
           <div className="flex flex-wrap justify-center gap-4">
             <Button className="bg-navy text-primary-foreground hover:bg-navy-dark rounded-full px-6 py-5 flex items-center gap-2">
               Book 1-o-1 Consultation
