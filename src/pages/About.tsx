@@ -52,14 +52,14 @@ const About = () => {
         <section className="relative bg-navy-light overflow-hidden">
           <div className="container mx-auto px-4 py-12 lg:py-16">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div className="text-white space-y-6 z-10">
-                <h1 className="font-playfair text-4xl lg:text-5xl font-bold">
+              <div className="text-navy space-y-6 z-10">
+                <h1 className="font-playfair text-4xl lg:text-5xl font-bold text-navy">
                   Welcome to Phare<span className="text-gold">X</span>
                 </h1>
-                <p className="text-xl text-cream font-medium">
+                <p className="text-xl text-navy font-medium">
                   Your trusted partner for navigating life as an international student in the UK.
                 </p>
-                <p className="text-cream/80">
+                <p className="text-navy/70">
                   At PhareX, we understand the challenges of studying in a new country.
                   We provide practical guidance, ethical support, and reliable resources
                   to help you succeed academically and personally.
