@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Youtube, Linkedin } from "lucide-react";
+import { NavLink } from "@/components/NavLink";
 
 const Footer = () => {
   return (
@@ -8,11 +9,27 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Navigation Links */}
           <nav className="flex flex-wrap justify-center gap-6 text-sm">
-            <a href="#" className="hover:text-gold transition-colors">About</a>
-            <a href="#" className="hover:text-gold transition-colors">Services</a>
-            <a href="#" className="hover:text-gold transition-colors">Community</a>
-            <a href="#" className="hover:text-gold transition-colors">Partners</a>
-            <a href="#" className="hover:text-gold transition-colors">Contact</a>
+            <NavLink to="/about" className="hover:text-gold transition-colors">
+              About
+            </NavLink>
+            <NavLink
+              to="/orientation-services"
+              className="hover:text-gold transition-colors"
+            >
+              Services
+            </NavLink>
+            <a href="#" className="hover:text-gold transition-colors">
+              Community
+            </a>
+            <a href="#" className="hover:text-gold transition-colors">
+              Partners
+            </a>
+            <NavLink
+              to="/orientation-services"
+              className="hover:text-gold transition-colors"
+            >
+              Contact
+            </NavLink>
           </nav>
 
           {/* Social Icons */}
@@ -38,11 +55,26 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-primary-foreground/70">
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="#" className="hover:text-primary-foreground transition-colors">Privacy Policy</a>
+              <a
+                href="#"
+                className="hover:text-primary-foreground transition-colors"
+              >
+                Privacy Policy
+              </a>
               <span>|</span>
-              <a href="#" className="hover:text-primary-foreground transition-colors">Terms of Service</a>
+              <a
+                href="#"
+                className="hover:text-primary-foreground transition-colors"
+              >
+                Terms of Service
+              </a>
               <span>|</span>
-              <a href="#" className="hover:text-primary-foreground transition-colors">FAQs</a>
+              <a
+                href="#"
+                className="hover:text-primary-foreground transition-colors"
+              >
+                FAQs
+              </a>
             </div>
           </div>
         </div>

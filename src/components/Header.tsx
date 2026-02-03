@@ -1,5 +1,6 @@
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { NavLink } from "@/components/NavLink";
 
 const Header = () => {
   return (
@@ -14,24 +15,40 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="#" className="text-sm font-medium text-navy hover:text-gold transition-colors">
+          <NavLink
+            to="/"
+            className="text-sm font-medium text-navy hover:text-gold transition-colors"
+            activeClassName="text-gold"
+          >
             Home
-          </a>
-          <a href="#" className="text-sm font-medium text-navy hover:text-gold transition-colors">
+          </NavLink>
+          <NavLink
+            to="/about"
+            className="text-sm font-medium text-navy hover:text-gold transition-colors"
+            activeClassName="text-gold"
+          >
             About Us
-          </a>
+          </NavLink>
           <button className="text-sm font-medium text-navy hover:text-gold transition-colors flex items-center gap-1">
             Services <ChevronDown className="w-4 h-4" />
           </button>
           <button className="text-sm font-medium text-navy hover:text-gold transition-colors flex items-center gap-1">
             Community <ChevronDown className="w-4 h-4" />
           </button>
-          <a href="#" className="text-sm font-medium text-navy hover:text-gold transition-colors">
+          <NavLink
+            to="/orientation-services"
+            className="text-sm font-medium text-navy hover:text-gold transition-colors"
+            activeClassName="text-gold"
+          >
             Contact Us
-          </a>
-          <a href="#" className="text-sm font-medium text-navy hover:text-gold transition-colors">
+          </NavLink>
+          <NavLink
+            to="/employment"
+            className="text-sm font-medium text-navy hover:text-gold transition-colors"
+            activeClassName="text-gold"
+          >
             Join Us
-          </a>
+          </NavLink>
         </nav>
 
         {/* CTA Button */}
